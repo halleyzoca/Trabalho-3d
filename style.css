@@ -1,1 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
+body {
+    background-color: #ffffff; /* Branco */
+    color: #333;
+}
+
+/* Menu no Topo */
+header {
+    background-color: #ffccd5; /* Rosa Claro */
+    padding: 15px 5%;
+    border-bottom: 3px solid #d00000; /* Linha Vermelha */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li { margin-left: 20px; }
+
+nav a {
+    text-decoration: none;
+    color: #d00000; /* Vermelho */
+    font-weight: bold;
+}
+
+/* Estilo do Botão */
+button {
+    background-color: #d00000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff4d6d; /* Rosa mais escuro no hover */
+}
+
+/* Efeito de Coração (Animação) */
+.coracao {
+    position: fixed;
+    color: #d00000;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    animation: subir 3s linear forwards;
+}
+
+@keyframes subir {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+}
